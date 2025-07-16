@@ -6,11 +6,20 @@
     */
 
     // ENTRADA
+    const caractere = prompt(`Informe um caractere.`).toUpperCase().trim();
 
-    
+
     // PROCESSAMENTO
+    switch (caractere === "A" || caractere === "E" || caractere === "I" || caractere === "O" || caractere === "U") {
+        case true:
+            alert(`Esse caractere é uma vogal.`)
+            break;
+        case false:
+            alert(`Esse caractere não é uma vogal.`)
 
-    
+    }
+
+
     // SAÍDA
 
 </script>

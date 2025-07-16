@@ -9,11 +9,165 @@
     */
 
     //ENTRADA
-
+    const numero = Number(prompt(`Informe o primeiro número.`));
+    const numero2 = Number(prompt(`Informe o segundo número.`));
+    const operacao = prompt(`Informe qual operação vocẽ deseja: digite A - Adição, S - Subtração, M - Multiplicação ou D - Divisão.`).toUpperCase().trim();
 
     //PROCESSAMENTO
 
-    
+    let conta;
+    let parImpar;
+    let PouN;
+    let IouD;
+
+    switch (operacao) {
+        case "A":
+            conta = numero + numero2;
+
+            switch (conta % 2 === 0) {
+
+                case true:
+                    parImpar = "é par";
+                    break;
+                case false:
+                    parImpar = "é ímpar";
+                    break;
+
+            } switch (conta >= 0) {
+
+                case true:
+                    PouN = "é positivo";
+                    break;
+                case false:
+                    PouN = "é negativo";
+                    break;
+
+            } switch (conta % 1 === 0) {
+
+                case true:
+                    IouD = "é inteiro";
+                    break;
+                case false:
+                    IouD = "é decimal";
+                    break;
+            }
+
+            alert(`O resultado é ${conta}, que ${parImpar}, ${PouN} e ${IouD}.`);
+
+            break;
+
+        case "S":
+
+            conta = numero - numero2
+
+            switch (conta % 2 === 0) {
+
+                case true:
+                    parImpar = "é par";
+                    break;
+                case false:
+                    parImpar = "é ímpar";
+                    break;
+
+            } switch (conta >= 0) {
+
+                case true:
+                    PouN = "é positivo";
+                    break;
+                case false:
+                    PouN = "é negativo";
+                    break;
+
+            } switch (conta % 1 === 0) {
+
+                case true:
+                    IouD = "é inteiro";
+                    break;
+                case false:
+                    IouD = "é decimal";
+                    break;
+            }
+
+            alert(`O resultado é ${conta}, que ${parImpar}, ${PouN} e ${IouD}.`);
+
+            break;
+
+            case "M":
+
+            conta = numero * numero2
+
+            switch (conta % 2 === 0) {
+
+                case true:
+                    parImpar = "é par";
+                    break;
+                case false:
+                    parImpar = "é ímpar";
+                    break;
+
+            } switch (conta >= 0) {
+
+                case true:
+                    PouN = "é positivo";
+                    break;
+                case false:
+                    PouN = "é negativo";
+                    break;
+
+            } switch (conta % 1 === 0) {
+
+                case true:
+                    IouD = "é inteiro";
+                    break;
+                case false:
+                    IouD = "é decimal";
+                    break;
+            }
+
+            alert(`O resultado é ${conta}, que ${parImpar}, ${PouN} e ${IouD}.`);
+
+            break;
+
+            case "D":
+
+            conta = numero / numero2
+
+            switch (conta % 2 === 0) {
+
+                case true:
+                    parImpar = "é par";
+                    break;
+                case false:
+                    parImpar = "é ímpar";
+                    break;
+
+            } switch (conta >= 0) {
+
+                case true:
+                    PouN = "é positivo";
+                    break;
+                case false:
+                    PouN = "é negativo";
+                    break;
+
+            } switch (conta % 1 === 0) {
+
+                case true:
+                    IouD = "é inteiro";
+                    break;
+                case false:
+                    IouD = "é decimal";
+                    break;
+            }
+
+            alert(`O resultado é ${conta}, que ${parImpar}, ${PouN} e ${IouD}.`);
+
+            break;
+
+
+    }
+
+
     //SAÍDA
 
 </script>
