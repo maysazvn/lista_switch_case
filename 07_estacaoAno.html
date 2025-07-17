@@ -7,9 +7,75 @@
     */
 
     //ENTRADA
+    const hemisferio = prompt(`Informe em qual hemisfério você está: digite S - Sul ou N - Norte.`);
+    const mes = Number(prompt(`Informe qual é o mês atual: digite 1 - Janeiro, 2 - Fevereiro, 3 - Março, 4 - Abril, 5 - Maio, 6 - Junho, 7 - Julho, 8 - Agosto, 9 - Setembro, 10 - Outubro, 11 - Novembro ou 12 -  Dezembro`));
 
-    
+
     //PROCESSAMENTO
+    switch (hemisferio) {
+        case "S":
+
+            switch (mes) {
+                case 1:
+                case 2:
+                case 3:
+                    alert(`Você está no verão!`);
+                    break;
+
+                case 4:
+                case 5:
+                case 6:
+                    alert(`Você está no outono!`);
+                    break;
+
+                case 7:
+                case 8:
+                case 9:
+                    alert(`Você está no inverno!`);
+                    break;
+
+                case 10:
+                case 11:
+                case 12:
+                    alert(`Você está na primavera!`);
+                    break;
+            }
+            break;
+
+        case "N":
+
+            switch (mes) {
+                case 1:
+                case 2:
+                case 3:
+                    alert(`Você está no inverno!`);
+                    break;
+
+                case 4:
+                case 5:
+                case 6:
+                    alert(`Você está na primavera!`);
+                    break;
+
+                case 7:
+                case 8:
+                case 9:
+                    alert(`Você está no verão!`);
+                    break;
+
+                case 10:
+                case 11:
+                case 12:
+                    alert(`Você está no outono!`);
+                    break;
+            }
+            break;
+
+            default:
+                alert(`Caso inválido.`);
+                break;
+    }
+
 
 
     //SAÍDA
