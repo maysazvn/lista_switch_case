@@ -9,15 +9,23 @@
     const numero = Number(prompt(`Informe um número inteiro`));
     
     //PROCESSAMENTO
-    switch(numero % 2 === 0){
+   switch(numero % 1 === 0){
+        case true: 
+
+         switch(numero % 2 === 0){
         case true:
-            alert(`O número é par`);
+            alert(`O número é par.`);
             break;
 
             case false:
-                alert(`O número é ímpar`);
+                alert(`O número é ímpar.`);
             break;
+         }
 
+         break;
+
+         case false: 
+         alert(`Esse número não é inteiro.`);
     }
 
     //SAÍDA
